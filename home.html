@@ -52,9 +52,7 @@
                     <h2>Welcome to myRoom</h2>
                     <p>Manage room,rents and due maintaince requests </p>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        data-bs-whatever="@mdo">Add Room</button>
-                    <button class="btn btn-primary">Add Tenants</button>
-                    <button class="btn btn-success">Remove Tenants</button>
+                        data-bs-whatever="@mdo">Add Tenant</button>
                 </div>
             </div>
 
@@ -226,19 +224,27 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
+                            <label for="firstName" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="firstName">
                         </div>
                         <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <label for="lastName" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="roomNumber" class="col-form-label">Room Number:</label>
+                            <input type="text" class="form-control" id="roomNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="aadharNumber" class="col-form-label">Aadhar Number:</label>
+                            <input type="text" class="form-control" id="aadharNumber">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
-                </div>
+ 
             </div>
         </div>
     </div>
